@@ -24,6 +24,9 @@ public class ServletUploadControllerV1 {
         log.info("itemName={}", itemName);
         Collection<Part> parts = request.getParts();
         log.info("parts={}", parts);
+        for (Part part : parts) {
+            
+        }
         return "upload-form";
     }
 }
